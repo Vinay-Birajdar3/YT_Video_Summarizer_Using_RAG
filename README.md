@@ -110,6 +110,62 @@ Or run the pipeline script (headless) on the sample video:
 py run_video.py
 ```
 
+**Quick Start (Contributor)**
+
+- Clone the repo and enter the folder:
+
+```bash
+git clone <repo-url>
+cd YouTube-RAG-Assistant
+```
+
+- Copy the example env and add one of the API keys (`GROQ_API_KEY` or `OPENAI_API_KEY`):
+
+Windows PowerShell:
+```powershell
+Copy-Item .env.example .env
+notepad .env
+```
+macOS/Linux:
+```bash
+cp .env.example .env
+nano .env
+```
+
+- Create a virtual environment and install dependencies:
+
+PowerShell:
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+CMD (Windows):
+```cmd
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+macOS / Linux:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+- Run the app:
+
+```bash
+py -m streamlit run app.py
+```
+
+- Tips:
+	- If you have an `OPENAI_API_KEY` you can use hosted embeddings/LLMs and avoid heavy local installs (recommended for quick setup).
+	- The included `scripts/` helpers are optional (`scripts/install.ps1`, `scripts/run.ps1`, `scripts/install.sh`, `scripts/run.sh`).
+	- If PowerShell blocks script execution, run the commands manually or use `powershell -ExecutionPolicy Bypass -File scripts/install.ps1`.
+
 Files in this repo
 
 - `app.py` — Streamlit UI
