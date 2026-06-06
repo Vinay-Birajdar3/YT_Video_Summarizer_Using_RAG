@@ -1,8 +1,3 @@
-
-import os
-import streamlit as st
-from dotenv import load_dotenv
-
 import os
 import streamlit as st
 from dotenv import load_dotenv
@@ -172,13 +167,6 @@ if st.button("💬 Ask"):
 
         st.write(answer)
 
-            st.session_state["summary"] = summary
-
-        st.success("✅ Video Processed Successfully!")
-
-    except Exception as e:
-
-        st.error(f"Error: {e}")
 
 # ---------------------------------------------------
 # SUMMARY
