@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local env
+.env
+
+# Generated artifacts
+summary.txt
+interview_questions.txt
+Video_Summary.pdf
+
+# VSCode
+.vscode/
