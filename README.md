@@ -46,12 +46,32 @@ py -m pip install langchain-groq
 
 Environment variables
 
- Create a `.env` file or export these env vars:
+Copy the example env file and fill your keys locally (do not commit):
 
- - `GROQ_API_KEY` — your GROQ API key (optional)
- - `OPENAI_API_KEY` — your OpenAI API key (optional fallback)
+```powershell
+copy .env.example .env
+# then edit .env and add your keys
+```
 
- There is a sample `.env` in the repo with placeholders.
+- `GROQ_API_KEY` — your GROQ API key (optional)
+- `OPENAI_API_KEY` — your OpenAI API key (optional fallback)
+
+The repo keeps only `.env.example` with empty placeholders. Add your real
+keys to `.env` locally and never commit that file.
+
+Quick setup (Windows PowerShell):
+
+```powershell
+.\scripts\install.ps1
+.\scripts\run.ps1
+```
+
+Quick setup (Linux / macOS):
+
+```bash
+./scripts/install.sh
+./scripts/run.sh
+```
  
  Note: the repo intentionally keeps these placeholders empty. Do NOT commit
  real keys. If both keys are empty the application will still run, but LLM
