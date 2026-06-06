@@ -1,0 +1,1 @@
+LLM unavailable: set OPENAI_API_KEY or GROQ_API_KEY in your environment (.env) to enable LLM features.
